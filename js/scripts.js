@@ -92,27 +92,32 @@ $(document).ready(function () {
             if (scroll >= 20) {
                 $('section.navigation').addClass('fixed');
                 $('header').css({
+                    "visibility": "visible",
                     "border-bottom": "none",
-                    "padding": "35px 0"
+                    "padding": "25px 0"
                 });
                 $('header .member-actions').css({
-                    "top": "26px",
+                    "top": "18px",
                 });
                 $('header .navicon').css({
-                    "top": "34px",
+                    "top": "25px",
                 });
+                //$('.nav-toggle').removeClass('accent-bg-nav-toogle');
+                $('.nav-toggle').addClass('white-bg');
             } else {
                 $('section.navigation').removeClass('fixed');
                 $('header').css({
-                    "border-bottom": "solid 1px rgba(255, 255, 255, 0.2)",
-                    "padding": "50px 0"
+                    "visibility": "hidden",
+                    //"padding": "50px 0"
                 });
                 $('header .member-actions').css({
-                    "top": "41px",
+                    //"top": "41px",
                 });
                 $('header .navicon').css({
-                    "top": "48px",
+                    //"top": "48px",
                 });
+                $('.nav-toggle').removeClass('white-bg');
+                //$('.nav-toggle').addClass('accent-bg');
             }
         });
     });
@@ -128,7 +133,7 @@ $(document).ready(function () {
                 if (target.length) {
                     $('html,body').animate({
                         scrollTop: target.offset().top - 90
-                    }, 2000);
+                    }, 1000);
                     return false;
                 }
             }
