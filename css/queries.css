@@ -301,12 +301,12 @@
 
 @media screen and (max-width: 480px) {
     .hero .hero-content {
-        height: 80vh;
+        height: 75vh;
         padding-top: 5%;
     }
 
     .hero .sub-title .down-arrow{
-        bottom: 60px;
+        bottom: 90px;
     }
     
     .hero .hero-content img {
