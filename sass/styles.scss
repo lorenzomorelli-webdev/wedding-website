@@ -293,7 +293,7 @@ Navigation
 Hero
 ========================================================================== */
 .hero {
-  min-height: 90vh;
+  min-height: 100vh;
   background: url("../img/hero-min.jpg") center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -315,11 +315,16 @@ Hero
     margin-bottom: 80px;
   }
   .hero-content {
+    height: 85vh;
     padding-top: 5%;
   }
   .hero-content img {
     width: 35%;
   }
+  .sub-title{
+    height: 10vh;
+  }
+
 }
 .navigation {
   transition: all 300ms ease-in-out;
