@@ -334,7 +334,10 @@ Hero
 }
 .fixed {
   position: fixed;
-  background-color: rgba(55, 67, 105, 0.88);
+  //background-color: rgba(55, 67, 105, 0.88);
+  //background-color: rgba(181, 138, 233, 0.88);
+  background-color: #b8c1c0d2;
+
   z-index: 999;
   width: 100%;
 }
