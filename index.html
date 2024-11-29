@@ -162,7 +162,7 @@
             </div>
             <div class="row">
                 <div class="col-md-6 col-sm-12 col-xs-12 leftcol">
-                    <div class="wp3">
+                    <div class="wp1">
                         <p><strong>X Maggio - Roma</strong></p>
 
                         <h5>Firma in comune <span class="time"> 1-5 PM</span></h5>
@@ -170,17 +170,17 @@
                     </div>
                 </div>
                 <div class="col-md-6 col-sm-12 col-xs-12 rightcol">
-                    <div class="wp4">
+                    <div class="wp2">
                         <p><strong>21 Giugno - Amantea</strong></p>
 
                         <h5>Cerimonia scambio degli anelli <span class="time"> 5-6 PM</span></h5>
                         <p>descrizione della cerimonia</p>
                     </div>
-                    <div class="wp6">
+                    <div class="wp2">
                         <h5>Aperitivo <span class="time"> 18:00 - 20:00</span></h5>
                         <p>Descrizione dell'aperitivo</p>
                     </div>
-                    <div class="wp6">
+                    <div class="wp2">
                         <h5>CENA <span class="time"> 20:00 - infinito</span></h5>
                         <p>Descrizione dell'cena</p>
                     </div>
@@ -251,13 +251,12 @@
     </section>
 
     <section id="video-bg">
-        <div id="bgndVideo" class="player"
-            data-property="{videoURL:'https://www.youtube.com/watch?v=ODPkEco-mSo',containment:'#video-bg',autoPlay:true, mute:true, showControls:false, startAt:30, stopAt:100, opacity:1}">
-        </div>
-        <div id="video-content">
+        <div id="video-content" data-vbg-inline-styles="false" data-vbg-fit-box="true"
+            data-vbg="https://www.youtube.com/watch?v=eEpEeyqGlxA">
             <h5>Borgo della marinella</h5>
             <p>Amantea(CS) via ciccio 4</p>
         </div>
+
     </section>
 
     <section id="map" class="section-padding">
@@ -410,13 +409,12 @@
     </section>
 
     <section id="video-bg">
-        <div id="bgndVideo" class="player"
-            data-property="{videoURL:'https://www.youtube.com/watch?v=ODPkEco-mSo',containment:'#video-bg',autoPlay:true, mute:true, showControls:false, startAt:30, stopAt:100, opacity:1}">
-        </div>
-        <div id="video-content">
+        <div id="video-content" data-vbg-inline-styles="false" data-vbg-fit-box="true"
+            data-vbg="https://www.youtube.com/watch?v=eEpEeyqGlxA?modestbranding=0">
             <h5>AMANTEA</h5>
             <p>Calabria</p>
         </div>
+
     </section>
 
 
@@ -445,7 +443,7 @@
                     <p>Ti siamo grati se ci fate sapere entro il tot</p>
                     <h5>Contatti</h5>
                     <p>SERENA <i class="fa fa-mobile"></i> <a href="tel://+393460942151"> +39 346 0942151</a><br>
-                       FEDERICO <i class="fa fa-mobile"></i> <a href="tel://+393405640821"> +39 340 5640821</a>
+                        FEDERICO <i class="fa fa-mobile"></i> <a href="tel://+393405640821"> +39 340 5640821</a>
                     </p>
                     <form id="rsvp-form" class="rsvp-form" action="" method="POST">
                         <div class="row">
@@ -503,7 +501,8 @@
     <script src="js/jquery.fancybox.pack.js"></script>
     <script src="js/vendor/bootstrap.min.js"></script>
     <script src="js/jquery.flexslider-min.js"></script>
-    <script src="js/jquery.mb.YTPlayer.min.js"></script>
+    <!--<script src="js/jquery.mb.YTPlayer.min.js"></script>-->
+    <script type="text/javascript" src="https://unpkg.com/youtube-background/jquery.youtube-background.min.js"></script>
     <script src="js/vendor/ouical.js"></script>
     <script src="js/scripts.min.js"></script>
     <script async defer

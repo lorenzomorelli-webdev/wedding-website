@@ -229,19 +229,20 @@ Navigation
 }
 
 .white-bg {
-
-  span,span:before,span::after{
+  span,
+  span:before,
+  span::after {
     background: white;
   }
 }
 
 .accent-bg {
-
-  span,span:before,span::after{
+  span,
+  span:before,
+  span::after {
     background: $accent-color;
   }
 }
-
 
 .nav-toggle span:before {
   top: -10px;
@@ -321,10 +322,9 @@ Hero
   .hero-content img {
     width: 35%;
   }
-  .sub-title{
+  .sub-title {
     height: 10vh;
   }
-
 }
 .navigation {
   transition: all 300ms ease-in-out;
@@ -786,6 +786,17 @@ Embed video
 ========================================================================== */
 #video-bg {
   height: 300px;
+
+  iframe {
+    width: 300% !important;
+    height: 100%;
+    opacity: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    margin-left: -100%;
+  }
 }
 #video-content {
   width: 100%;

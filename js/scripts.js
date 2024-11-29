@@ -142,7 +142,7 @@ $(document).ready(function () {
     });
 
     /********************** Social Share buttons ***********************/
-    var share_bar = document.getElementsByClassName('share-bar');
+    /*var share_bar = document.getElementsByClassName('share-bar');
     var po = document.createElement('script');
     po.type = 'text/javascript';
     po.async = true;
@@ -165,9 +165,15 @@ $(document).ready(function () {
         share_bar[i].innerHTML = html;
         share_bar[i].style.display = 'inline-block';
     }
-
+    */
     /********************** Embed youtube video *********************/
+    /** 
     $('.player').YTPlayer();
+    $('.player2').YTPlayer();
+    */
+
+    videoBackgrounds = new VideoBackgrounds('[data-vbg]');
+
 
 
     /********************** Toggle Map Content **********************/
