@@ -789,7 +789,7 @@ Embed video
 
   iframe {
     width: 300% !important;
-    height: 100% !important;
+    height: 100%;
     opacity: 1;
     position: absolute;
     top: 0;
@@ -819,6 +819,10 @@ Embed video
 /* ==========================================================================
 Google map
 ========================================================================== */
+#map {
+  background: white;
+}
+
 #map-canvas {
   height: 500px;
   width: 100%;
