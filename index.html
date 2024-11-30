@@ -64,15 +64,11 @@
 </head>
 
 <body id="top">
-    <!--[if lt IE 8]>
-<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade
-    your browser</a> to improve your experience.</p>
-<![endif]-->
     <section class="hero">
         <section class="navigation">
             <header>
                 <div class="header-content">
-                    <div class="logo"><a href="#"><img src="img/logo.png" alt="Logo"></a></div>
+                    <div class="logo"><a href="#"><img src="img/Logo.gif" alt="Logo"></a></div>
                     <div class="header-nav">
                         <nav>
                             <ul class="primary-nav">
@@ -98,10 +94,7 @@
             <div class="row">
                 <div class="col-12">
                     <div class="hero-content">
-                        <!--<h1>Ram and Antara</h1>-->
                         <img src="img/Logo-lg.gif">
-                        <!--<p class="intro">Ram & Antara are getting hitched!</p>-->
-                        <!--<a href="#" class="btn btn-fill btn-large btn-margin-right">Scroll Down</a> -->
                     </div>
                 </div>
             </div>
@@ -156,7 +149,7 @@
     <section class="events section-padding" id="events">
         <div class="container">
             <div class="row">
-                <div class="col-md-12">
+                <div class="col-md-12 text-center">
                     <h3 class="header">Come sarà organizzato?</h3>
                 </div>
             </div>
@@ -176,11 +169,11 @@
                         <h5>Cerimonia scambio degli anelli <span class="time"> 5-6 PM</span></h5>
                         <p>descrizione della cerimonia</p>
                     </div>
-                    <div class="wp4">
+                    <div class="wp5">
                         <h5>Aperitivo <span class="time"> 18:00 - 20:00</span></h5>
                         <p>Descrizione dell'aperitivo</p>
                     </div>
-                    <div class="wp4">
+                    <div class="wp6">
                         <h5>CENA <span class="time"> 20:00 - infinito</span></h5>
                         <p>Descrizione dell'cena</p>
                     </div>
@@ -263,10 +256,15 @@
             <h3>How do I get there?</h3>
             <p>It's way easier than you think!</p>
         </div>
-        <div id="map-canvas"></div>
+        <div id="map-canvas">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15609.09092925573!2d16.10147602385955!3d39.078319753958986!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x133fc3bf7234cbb1%3A0xda4fa2fb4ca48f76!2sIl%20Borgo%20della%20Marinella!5e0!3m2!1sen!2sit!4v1732974924154!5m2!1sen!2sit"
+                width="600" height="500" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
         <div id="map-content-wrapper" class="container pointer-events-none">
             <div class="row">
-                <div class="col-xs-offset-1 col-xs-10 col-md-offset-3 col-md-6">
+                <div class="col-xs-offset-2 col-xs-8 col-md-offset-3 col-md-6">
                     <div class="text-center">
                         <div id="btn-show-content" class="toggle-map-content pointer-events-auto">
                             <i class="fa fa-info-circle"></i>&nbsp;&nbsp; Show info
@@ -274,27 +272,15 @@
                     </div>
                     <div id="map-content" class="pointer-events-auto">
                         <div class="row">
-                            <div class="col-md-6">
-                                <h5>ITC Fortune Park</h5>
-                                <p>Kona Expressway, Howrah, West Bengal 711403, India</p>
-                            </div>
-                            <div class="col-md-6">
-                                <h5>Mr. Amit Roy</h5>
-                                <p><i class="fa fa-mobile"></i> <a href="tel://+919412345678">+91 9412345678</a><br>
-                                    <i class="fa fa-mobile"></i> <a href="tel://+917123456789">+91 7123456789</a>
-                                </p>
+                            <div class="col-md-12 text-center">
+                                <h5>Il Borgo della Marinella</h5>
+                                <p>Via Formiciche, 35, 87032 Amantea CS</p>
                             </div>
                         </div>
                         <div class="row text-center">
-                            <div class="col-md-6" style="padding: 5px;">
-                                <a class="btn btn-fill btn-small"
-                                    href="https://m.uber.com/ul/?action=setPickup&client_id=Yh7Dl6SjB56RY2JuuZF8ttVa6ryFV78W&pickup=my_location&dropoff[formatted_address]=Fortune%20Park%20Panchwati%20-%20Hotels%20in%20Kolkata%2C%20Howrah%2C%20West%20Bengal%2C%20India&dropoff[latitude]=22.593276&dropoff[longitude]=88.270277"><i
-                                        class="fa fa-taxi"></i>&nbsp;&nbsp;Book Uber</a>
-                            </div>
-                            <div class="col-md-6" style="padding: 5px;">
+                            <div class="col-md-12" style="padding: 5px;">
                                 <a class="btn btn-accent btn-small" id="btn-show-map"><i
-                                        class="fa fa-map-marker"></i>&nbsp;&nbsp;Show
-                                    map</a>
+                                        class="fa fa-map-marker"></i>&nbsp;&nbsp;Vedi mappa</a>
                             </div>
                         </div>
                     </div>
@@ -302,25 +288,6 @@
             </div>
         </div>
     </section>
-    <!--
-    <section id="instagram" class="section-padding">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12 text-center">
-                    <h3>A picture is worth a thousand words!</h3>
-                    <p>Help us capture the moment, tag your photos with the hashtag
-                        <a href="https://instagram.com/explore/tags/ramandantara/" target="_blank">#RamAndAntara</a>
-                    </p>
-                </div>
-            </div>
-            <div class="row section-border wp7">
-                <div class="col-md-4 col-md-offset-4">
-                    <img src="img/iphone_instagram.jpg">
-                </div>
-            </div>
-        </div>
-    </section>
-    -->
 
     <section id="eng-pics" class="section-padding">
         <div class="container-fluid">
@@ -397,14 +364,6 @@
                 <div class="col-xs-12 section-border section-padding"></div>
             </div>
         </div>
-        <!--<div class="row">
-        <div class="col-md-12">
-            <div class="diamond floating-logo">
-                <img src="img/sketch-logo.png" alt="Sketch Logo">
-                <div class="ring"></div>
-            </div>
-        </div>
-    </div>-->
     </section>
 
     <section id="video-bg">
@@ -413,12 +372,10 @@
             <h5>AMANTEA</h5>
             <p>Calabria</p>
         </div>
-
     </section>
 
 
-    <section class="rsvp text-center" id="rsvp">
-
+    <section class="rsvp text-center section-padding" id="rsvp">
         <div id="rsvp-modal" class="modal fade" tabindex="-1" role="dialog">
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
@@ -500,28 +457,9 @@
     <script src="js/jquery.fancybox.pack.js"></script>
     <script src="js/vendor/bootstrap.min.js"></script>
     <script src="js/jquery.flexslider-min.js"></script>
-    <!--<script src="js/jquery.mb.YTPlayer.min.js"></script>-->
     <script type="text/javascript" src="https://unpkg.com/youtube-background/jquery.youtube-background.min.js"></script>
     <script src="js/vendor/ouical.js"></script>
     <script src="js/scripts.min.js"></script>
-    <script async defer
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBlPw3GQYI3faa_9mRE6plWuM7xNEmrwH0&callback=initMap"></script>
-    <!-- Google Analytics -->
-    <!--<script>
-        (function (i, s, o, g, r, a, m) {
-            i['GoogleAnalyticsObject'] = r;
-            i[r] = i[r] || function () {
-                (i[r].q = i[r].q || []).push(arguments)
-            }, i[r].l = 1 * new Date();
-            a = s.createElement(o),
-                m = s.getElementsByTagName(o)[0];
-            a.async = 1;
-            a.src = g;
-            m.parentNode.insertBefore(a, m)
-        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
-        ga('create', 'UA-46465113-4', 'auto');
-        ga('send', 'pageview');
-    </script> -->
 </body>
 
 </html>

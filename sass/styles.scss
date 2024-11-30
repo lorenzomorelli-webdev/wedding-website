@@ -603,11 +603,13 @@ Features-stack
 ========================================================================== */
 .events {
   .leftcol {
-    padding-right: 100px;
+    //padding-right: 100px;
+    text-align: center;
     border-right: solid 1px $keyline-color;
   }
   .rightcol {
-    padding-left: 100px;
+    text-align: center;
+    //padding-left: 100px;
   }
 
   .time {
@@ -616,6 +618,7 @@ Features-stack
     text-transform: lowercase;
     color: $txt-primary;
   }
+
 }
 
 /* ==========================================================================
@@ -710,6 +713,7 @@ Instagram
 Engagement Pics
 ========================================================================== */
 #eng-pics {
+  background: white;
   img {
     width: 100%;
     height: auto;
@@ -788,6 +792,7 @@ Embed video
   height: 300px;
 
   iframe {
+    transform: translateY(-10%);
     width: 300% !important;
     height: 100%;
     opacity: 1;
@@ -826,6 +831,10 @@ Google map
 #map-canvas {
   height: 500px;
   width: 100%;
+
+  iframe{
+    width: 100%;
+  }
 }
 #map-content-wrapper {
   position: relative;
@@ -936,6 +945,7 @@ RSVP form
 Footer
 ========================================================================== */
 footer {
+  background: white;
   .content {
     border-top: 1px solid $keyline-color;
     padding-bottom: 20px;
