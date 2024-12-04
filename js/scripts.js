@@ -47,6 +47,11 @@ $(document).ready(function () {
     }, {
         offset: '75%'
     });
+    $('.wp10').waypoint(function () {
+        $('.wp10').addClass('animated fadeInLeft');
+    }, {
+        offset: '75%'
+    });
 
     /***************** Initiate Flexslider ******************/
     $('.flexslider').flexslider({

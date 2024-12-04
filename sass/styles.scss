@@ -172,7 +172,8 @@ Waypoinsts
 .wp6,
 .wp7,
 .wp8,
-.wp9 {
+.wp9,
+.wp10 {
   visibility: hidden;
 }
 .wp8,
@@ -618,7 +619,6 @@ Features-stack
     text-transform: lowercase;
     color: $txt-primary;
   }
-
 }
 
 /* ==========================================================================
@@ -704,6 +704,7 @@ Features-stack
 Instagram
 ========================================================================== */
 #instagram {
+  background: white;
   img {
     width: 100%;
   }
@@ -832,7 +833,7 @@ Google map
   height: 500px;
   width: 100%;
 
-  iframe{
+  iframe {
     width: 100%;
   }
 }
@@ -871,7 +872,7 @@ Google map
 RSVP form
 ========================================================================== */
 .rsvp {
-  padding-bottom: 140px;
+  //padding-bottom: 140px;
   .rsvp-form {
     .rsvp-btn {
       padding: 15px 0;
