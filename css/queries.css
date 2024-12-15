@@ -308,7 +308,8 @@
 @media screen and (max-width: 480px) {
   .hero .hero-content {
     height: 75vh;
-    padding-top: 5%;
+    padding-top: 10%;
+    padding-left: 5%;
   }
 
   .hero .sub-title .down-arrow {
@@ -316,7 +317,7 @@
   }
 
   .hero .hero-content img {
-    width: 50%;
+    width: 35%;
   }
 
   .hero .btn {
