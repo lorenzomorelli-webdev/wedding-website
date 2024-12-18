@@ -197,6 +197,7 @@ $(document).ready(function () {
   videoBackgrounds = new VideoBackgrounds("[data-vbg]");
 
   /********************** Toggle Map Content **********************/
+  /** 
   $("#btn-show-map").click(function () {
     $("#map-content").toggleClass("toggle-map-content");
     $("#btn-show-content").toggleClass("toggle-map-content");
@@ -205,6 +206,7 @@ $(document).ready(function () {
     $("#map-content").toggleClass("toggle-map-content");
     $("#btn-show-content").toggleClass("toggle-map-content");
   });
+  */
 
   /********************** Add to Calendar **********************/
   var myCalendar = createCalendar({
@@ -219,7 +221,7 @@ $(document).ready(function () {
 
       // Event start date
       //start: new Date("Nov 27, 2025 10:00"),
-      start: new Date("Nov 27, 2025 10:00"),
+      start: new Date("Jun 28, 2025 00:00"),
 
       // Event duration (IN MINUTES)
       // duration: 120,
@@ -227,14 +229,14 @@ $(document).ready(function () {
       // You can also choose to set an end time
       // If an end time is set, this will take precedence over duration
       //end: new Date("Nov 29, 2017 00:00"),
-      end: new Date("Nov 29, 2017 00:00"),
+      end: new Date("Nov 29, 2017 23:59"),
 
       // Event Address
-      address: "ITC Fortune Park Hotel, Kolkata",
+      address: "Il Borgo della Marinella, Via Formiciche, 35, 87032 Amantea CS",
 
       // Event Description
       description:
-        "We can't wait to see you on our big day. For any queries or issues, please contact Mr. Amit Roy at +91 9876543210.",
+        "Non vediamo l'ora di averti in questo giorno speciale!",
     },
   });
 
@@ -246,12 +248,12 @@ $(document).ready(function () {
     var data = $(this).serialize();
 
     $("#alert-wrapper").html(
-      alert_markup("info", "<strong>Just a sec!</strong> We are saving your details.")
+      alert_markup("info", "<strong>Aspetta un secondo!</strong> Stiamo salvando la tua prenotazione.")
     );
 
     if (MD5($("#invite_code").val()) !== "defa50a7babc2b727c44fe4e03905bf4") {
       $("#alert-wrapper").html(
-        alert_markup("danger", "<strong>Sorry!</strong> Your invite code is incorrect.")
+        alert_markup("danger", "<strong>Sorry!</strong> Il codice non è corretto!")
       );
     } else {
       $.post(
@@ -270,7 +272,7 @@ $(document).ready(function () {
         .fail(function (data) {
           console.log(data);
           $("#alert-wrapper").html(
-            alert_markup("danger", "<strong>Sorry!</strong> There is some issue with the server. ")
+            alert_markup("danger", "<strong>Purtroppo c'è un problema con il sito!</strong> Scrivimi su Whatsapp e risolveremo. ")
           );
         });
     }
