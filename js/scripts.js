@@ -178,19 +178,15 @@ $(document).ready(function () {
   });
 
   /********************** Intro animation ***********************/
-  
-  $(document).ready(function () {
-    // Splash screen logic
-    var splashScreen = $("#splash-screen");
 
-    setTimeout(function() {
-      splashScreen.toggleClass("dissolvi"); // Aggiunge la classe per la dissolvenza
-      setTimeout(function() {
-        splashScreen.remove(); // Rimuove l'elemento dopo l'animazione
-      }, 2000); // Durata della transizione CSS
-    }, 2000); // Mostra la splash screen per 2 secondi
-  });
+  var splashScreen = $("#splash-screen");
 
+  setTimeout(function () {
+    splashScreen.toggleClass("dissolvi"); // Aggiunge la classe per la dissolvenza
+    setTimeout(function () {
+      splashScreen.remove(); // Rimuove l'elemento dopo l'animazione
+    }, 2000); // Durata della transizione CSS
+  }, 2000); // Mostra la splash screen per 2 secondi
 
   /********************** Embed youtube video *********************/
 
@@ -229,14 +225,13 @@ $(document).ready(function () {
       // You can also choose to set an end time
       // If an end time is set, this will take precedence over duration
       //end: new Date("Nov 29, 2017 00:00"),
-      end: new Date("Nov 29, 2017 23:59"),
+      end: new Date("Jun 28, 2025 23:59"),
 
       // Event Address
       address: "Il Borgo della Marinella, Via Formiciche, 35, 87032 Amantea CS",
 
       // Event Description
-      description:
-        "Non vediamo l'ora di averti in questo giorno speciale!",
+      description: "Non vediamo l'ora di averti in questo giorno speciale!",
     },
   });
 
@@ -248,12 +243,15 @@ $(document).ready(function () {
     var data = $(this).serialize();
 
     $("#alert-wrapper").html(
-      alert_markup("info", "<strong>Aspetta un secondo!</strong> Stiamo salvando la tua prenotazione.")
+      alert_markup(
+        "info",
+        "<strong>Aspetta un secondo!</strong> Stiamo salvando la tua prenotazione."
+      )
     );
 
-    if (MD5($("#invite_code").val()) !== "defa50a7babc2b727c44fe4e03905bf4") {
+    if (MD5($("#codice").val()) !== "e7a9faab1ab0c81228cce2b2c197cd20") {
       $("#alert-wrapper").html(
-        alert_markup("danger", "<strong>Sorry!</strong> Il codice non è corretto!")
+        alert_markup("danger", "<strong>Attenzione!</strong> Il codice non è corretto!")
       );
     } else {
       $.post(
@@ -272,7 +270,10 @@ $(document).ready(function () {
         .fail(function (data) {
           console.log(data);
           $("#alert-wrapper").html(
-            alert_markup("danger", "<strong>Purtroppo c'è un problema con il sito!</strong> Scrivimi su Whatsapp e risolveremo. ")
+            alert_markup(
+              "danger",
+              "<strong>Purtroppo c'è un problema con il sito!</strong> Scrivimi su Whatsapp e risolveremo. "
+            )
           );
         });
     }
