@@ -204,39 +204,6 @@ $(document).ready(function () {
   });
   */
 
-  /********************** Add to Calendar **********************/
-  var myCalendar = createCalendar({
-    options: {
-      class: "",
-      // You can pass an ID. If you don't, one will be generated for you
-      id: "",
-    },
-    data: {
-      // Event title
-      title: "Serena e Federico si Sposano!",
-
-      // Event start date
-      //start: new Date("Nov 27, 2025 10:00"),
-      start: new Date("Jun 28, 2025 00:00"),
-
-      // Event duration (IN MINUTES)
-      // duration: 120,
-
-      // You can also choose to set an end time
-      // If an end time is set, this will take precedence over duration
-      //end: new Date("Nov 29, 2017 00:00"),
-      end: new Date("Jun 28, 2025 23:59"),
-
-      // Event Address
-      address: "Il Borgo della Marinella, Via Formiciche, 35, 87032 Amantea CS",
-
-      // Event Description
-      description: "Non vediamo l'ora di averti in questo giorno speciale!",
-    },
-  });
-
-  $("#add-to-cal").html(myCalendar);
-
   /********************** RSVP **********************/
   $("#rsvp-form").on("submit", function (e) {
     e.preventDefault();
@@ -272,7 +239,7 @@ $(document).ready(function () {
           $("#alert-wrapper").html(
             alert_markup(
               "danger",
-              "<strong>Purtroppo c'è un problema con il sito!</strong> Scrivimi su Whatsapp e risolveremo. "
+              "<strong>Purtroppo c'è un problema con il sito!</strong> Scrivici su Whatsapp e risolveremo. "
             )
           );
         });
