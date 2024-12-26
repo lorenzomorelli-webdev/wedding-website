@@ -251,7 +251,7 @@ $(document).ready(function () {
 
     if (MD5($("#codice").val()) !== "e7a9faab1ab0c81228cce2b2c197cd20") {
       $("#alert-wrapper").html(
-        alert_markup("danger", "<strong>Attenzione!</strong> Il codice non è corretto!")
+        alert_markup("danger", "<strong>Attenzione!</strong> Il codice non è corretto! <br>controlla su whatsapp il codice che ti abbiamo inviato")
       );
     } else {
       $.post(
