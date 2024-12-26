@@ -192,17 +192,11 @@ $(document).ready(function () {
 
   videoBackgrounds = new VideoBackgrounds("[data-vbg]");
 
-  /********************** Toggle Map Content **********************/
-  /** 
-  $("#btn-show-map").click(function () {
-    $("#map-content").toggleClass("toggle-map-content");
-    $("#btn-show-content").toggleClass("toggle-map-content");
+  /********************** Lazy Loading images **********************/
+
+  lazyLoadInstance = new LazyLoad({
+    elements_selector: ".lazy",
   });
-  $("#btn-show-content").click(function () {
-    $("#map-content").toggleClass("toggle-map-content");
-    $("#btn-show-content").toggleClass("toggle-map-content");
-  });
-  */
 
   /********************** RSVP **********************/
   $("#rsvp-form").on("submit", function (e) {
@@ -218,7 +212,10 @@ $(document).ready(function () {
 
     if (MD5($("#codice").val()) !== "e7a9faab1ab0c81228cce2b2c197cd20") {
       $("#alert-wrapper").html(
-        alert_markup("danger", "<strong>Attenzione!</strong> Il codice non è corretto! <br>controlla su whatsapp il codice che ti abbiamo inviato")
+        alert_markup(
+          "danger",
+          "<strong>Attenzione!</strong> Il codice non è corretto! <br>controlla su whatsapp il codice che ti abbiamo inviato"
+        )
       );
     } else {
       $.post(
